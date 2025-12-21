@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextNode - Organize your thoughts</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background effects -->
+        <div class="background-effect"></div>
+        
+        <main class="relative-content">
+            <!-- Header -->
+            <header class="header">
+                <h1>TextNode</h1>
+                <p>Organize your thoughts, one node at a time</p>
+            </header>
+
+            <!-- Input Section -->
+            <div class="card input-section">
+                <input 
+                    type="text" 
+                    id="noteTitle" 
+                    placeholder="Note title..." 
+                    class="input-field"
+                >
+                <textarea 
+                    id="noteContent" 
+                    placeholder="Write your note here..." 
+                    class="input-field textarea"
+                ></textarea>
+                <div class="input-footer">
+                    <input 
+                        type="text" 
+                        id="noteCategory" 
+                        placeholder="Category (e.g., Work, Personal, Ideas)" 
+                        class="input-field category-input"
+                    >
+                    <button id="addNoteBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add Note
+                    </button>
+                </div>
+            </div>
+
+            <!-- Success Banner -->
+            <div id="successBanner" class="success-banner hidden">
+                <div class="success-content">
+                    <p>✓ Nota creada exitosamente</p>
+                    <div class="success-actions">
+                        <button class="btn btn-success" onclick="downloadLastNoteTxt()">
+                            <i class="fas fa-file-alt"></i> Descargar .TXT
+                        </button>
+                        <button class="btn btn-info" onclick="downloadLastNoteJson()">
+                            <i class="fas fa-download"></i> Descargar .JSON
+                        </button>
+                        <button class="btn btn-close" onclick="closeSuccessBanner()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Section -->
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search notes by title, content, or category..." 
+                    class="search-field"
+                >
+            </div>
+
+            <!-- Notes Grid -->
+            <div id="notesContainer" class="notes-grid">
+                <div class="empty-state">
+                    <p>Start by creating your first note!</p>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div id="statsSection" class="stats-section hidden">
+                <div class="card stats-card">
+                    <div class="stat-item">
+                        <p class="stat-number" id="totalNotes">0</p>
+                        <p class="stat-label">Total Notes</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number" id="totalCategories">0</p>
+                        <p class="stat-label">Categories</p>
+                    </div>
+                </div>
+
+                <!-- Download All Section -->
+                <div class="card download-all-section">
+                    <h3><i class="fas fa-download"></i> Descargar todo</h3>
+                    <div class="download-buttons">
+                        <button class="btn btn-success" onclick="downloadAllTxt()">
+                            <i class="fas fa-file-alt"></i> Como .TXT
+                        </button>
+                        <button class="btn btn-info" onclick="downloadAllJson()">
+                            <i class="fas fa-download"></i> Como .JSON
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,17 +1,14 @@
 # TextNode 📝
 
-Una aplicación web moderna de notas y organización con diseño glassmorphic dark theme, hecha con HTML, CSS y JavaScript vanilla.
+Una aplicación web moderna de notas y organización con diseño colorido, hecha con HTML, CSS y JavaScript vanilla.
 
 ## ✨ Características
 
 - ✍️ **Crear notas** con título, contenido y categoría
-- 📝 **Editar notas** existentes fácilmente
 - 🗑️ **Eliminar notas** con confirmación
 - 🔍 **Búsqueda en tiempo real** por título, contenido o categoría
 - 📥 **Descargar notas individuales** como .TXT o .JSON
-- 📦 **Descargar todas las notas** en un único archivo
 - 💾 **Guardado automático** con localStorage
-- 🎨 **Diseño glassmorphic** con tema oscuro y gradientes
 - 📊 **Estadísticas** de notas y categorías
 - 📱 **Completamente responsivo**
 

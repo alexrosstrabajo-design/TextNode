@@ -1,124 +1,191 @@
 # TextNode 📝
 
-Una aplicación web moderna de notas y organización con diseño colorido, hecha con HTML, CSS y JavaScript vanilla.
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-success?style=for-the-badge)](https://text-node.vercel.app)
+[![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://text-node.vercel.app)
 
-## ✨ Características
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![FontAwesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=flat-square&logo=fontawesome&logoColor=white)
 
-- ✍️ **Crear notas** con título, contenido y categoría
-- 🗑️ **Eliminar notas** con confirmación
-- 🔍 **Búsqueda en tiempo real** por título, contenido o categoría
-- 📥 **Descargar notas individuales** como .TXT o .JSON
-- 💾 **Guardado automático** con localStorage
-- 📊 **Estadísticas** de notas y categorías
-- 📱 **Completamente responsivo**
+A modern note-taking and organization web application with a colorful design, built with HTML, CSS, and vanilla JavaScript.
 
-## 🚀 Cómo ejecutar
+---
 
-### Opción 1: Directamente en el navegador
-1. Abre el archivo `index.html` con tu navegador
-2. ¡Listo! La app está lista para usar
+## ✨ Features
 
-### Opción 2: Con un servidor local (Python)
+* ✍️ **Create notes** with title, content, and category
+* 🗑️ **Delete notes** with confirmation
+* 🔍 **Real-time search** by title, content, or category
+* 📥 **Download individual notes** as .TXT or .JSON
+* 💾 **Auto-save** with localStorage
+* 📊 **Statistics** for notes and categories
+* 📱 **Fully responsive** design
+
+---
+
+## 🚀 How to Run
+
+### Option 1: Directly in Browser
+
+1. Open the `index.html` file with your browser
+2. Done! The app is ready to use
+
+### Option 2: With Local Server (Python)
+
 ```bash
 cd ~/projects/textnode
 python -m http.server 8000
 ```
-Luego abre en tu navegador: `http://localhost:8000`
 
-### Opción 3: Con Node.js (http-server)
+Then open in your browser: `http://localhost:8000`
+
+### Option 3: With Node.js (http-server)
+
 ```bash
 npm install -g http-server
 cd ~/projects/textnode
 http-server
 ```
 
-## 📁 Estructura del Proyecto
+---
+
+## 📁 Project Structure
 
 ```
 textnode/
-├── index.html      # HTML principal
-├── styles.css      # Estilos CSS
-├── script.js       # Lógica JavaScript
-└── README.md       # Este archivo
+├── index.html      # Main HTML
+├── styles.css      # CSS styles
+├── script.js       # JavaScript logic
+└── README.md       # This file
 ```
-
-## 🎯 Cómo usar
-
-### Crear una nota
-1. Escribe un **título** en el primer campo
-2. Escribe el **contenido** en el textarea
-3. (Opcional) Agrega una **categoría**
-4. Haz clic en **"Add Note"** o presiona `Ctrl + Enter`
-
-### Descargar una nota
-- Después de crear, aparecerá un banner verde con opciones de descarga
-- O haz clic en los iconos de descarga en cada tarjeta:
-  - 📄 Descargar como .TXT
-  - 📥 Descargar como .JSON
-
-### Buscar notas
-- Usa el buscador superior para filtrar por:
-  - Título
-  - Contenido
-  - Categoría
-
-### Editar una nota
-- Haz clic en el icono de lápiz ✏️
-- La nota se cargará en el formulario
-- Modifica los datos y crea de nuevo
-
-### Descargar todo
-- Ve a la sección "Descargar todo" al final
-- Descarga todas tus notas como:
-  - Un único archivo .TXT
-  - Un archivo .JSON con metadatos
-
-## 💾 Almacenamiento
-
-Los datos se guardan automáticamente en **localStorage** del navegador, lo que significa:
-- ✅ Tus notas persisten al recargar la página
-- ✅ No necesitas servidor backend
-- ⚠️ Los datos se guardan solo en este navegador/dispositivo
-
-## 🛠️ Tecnologías
-
-- **HTML5** - Estructura semántica
-- **CSS3** - Glassmorphism, gradientes y animaciones
-- **JavaScript Vanilla** - Sin frameworks
-- **FontAwesome 6** - Iconos
-
-## 🎨 Diseño
-
-- **Tema oscuro** con gradientes morados y azules
-- **Glassmorphism** con efecto vidrio transparente
-- **Dark theme profesional** perfecto para largas sesiones
-- **Animaciones suaves** para mejor UX
-
-## 📝 Ejemplo de nota
-
-```
-Título: Ideas para el proyecto
-Categoría: Work
-Contenido: 
-- Implementar búsqueda avanzada
-- Agregar etiquetas múltiples
-- Diseñar página de configuración
-```
-
-## ✅ Requisitos
-
-- Un navegador moderno (Chrome, Firefox, Safari, Edge)
-- JavaScript habilitado
-- Nada más! Sin dependencias externas
-
-## 📄 Licencia
-
-MIT - Libre para usar y modificar
-
-## 🤝 Contribuciones
-
-¡Las sugerencias y mejoras son bienvenidas!
 
 ---
 
-**Disfruta organizando tus pensamientos con TextNode** 🎉
+## 🎯 How to Use
+
+### Create a Note
+
+1. Write a **title** in the first field
+2. Write the **content** in the textarea
+3. (Optional) Add a **category**
+4. Click **"Add Note"** or press `Ctrl + Enter`
+
+### Download a Note
+
+* After creating, a green banner will appear with download options
+* Or click the download icons on each card:
+  + 📄 Download as .TXT
+  + 📥 Download as .JSON
+
+### Search Notes
+
+* Use the search bar at the top to filter by:
+  + Title
+  + Content
+  + Category
+
+### Edit a Note
+
+* Click the pencil icon ✏️
+* The note will load into the form
+* Modify the data and create again
+
+### Download All
+
+* Go to the "Download All" section at the bottom
+* Download all your notes as:
+  + A single .TXT file
+  + A .JSON file with metadata
+
+---
+
+## 💾 Storage
+
+Data is automatically saved in the browser's **localStorage**, which means:
+
+* ✅ Your notes persist when you reload the page
+* ✅ No backend server needed
+* ⚠️ Data is saved only in this browser/device
+
+---
+
+## 🛠️ Technologies
+
+* **HTML5** - Semantic structure
+* **CSS3** - Glassmorphism, gradients, and animations
+* **Vanilla JavaScript** - No frameworks
+* **FontAwesome 6** - Icons
+
+---
+
+## 🎨 Design
+
+* **Dark theme** with purple and blue gradients
+* **Glassmorphism** with transparent glass effect
+* **Professional dark theme** perfect for long sessions
+* **Smooth animations** for better UX
+
+---
+
+## 📝 Note Example
+
+```
+Title: Project Ideas
+Category: Work
+Content: 
+- Implement advanced search
+- Add multiple tags
+- Design settings page
+```
+
+---
+
+## ✅ Requirements
+
+* A modern browser (Chrome, Firefox, Safari, Edge)
+* JavaScript enabled
+* Nothing else! No external dependencies
+
+---
+
+## 📄 License
+
+MIT - Free to use and modify
+
+---
+
+## 🤝 Contributions
+
+Suggestions and improvements are welcome!
+
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] Multiple tags per note
+- [ ] Advanced search filters
+- [ ] Dark/Light theme toggle
+- [ ] Export to PDF
+- [ ] Cloud sync (optional)
+- [ ] Note templates
+- [ ] Rich text editor
+
+---
+
+## 👨‍💻 Author
+
+**Alexander Ross**
+- GitHub: [@alexrosstrabajo-design](https://github.com/alexrosstrabajo-design)
+- Portfolio: [pagina-wheat.vercel.app](https://pagina-wheat.vercel.app)
+
+---
+
+**Enjoy organizing your thoughts with TextNode** 🎉

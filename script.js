@@ -1,3 +1,9 @@
+// Import Vercel Web Analytics
+import { inject } from '@vercel/analytics';
+
+// Initialize analytics
+inject();
+
 // State
 let notes = [];
 let lastNoteId = null;
